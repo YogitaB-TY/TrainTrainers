@@ -5,11 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WelcomePage {
+public class WelcomePage extends BasePage {
 	
 	public WelcomePage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 	
 	@FindBy(partialLinkText = "Register")
